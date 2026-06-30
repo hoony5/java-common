@@ -1,0 +1,58 @@
+plugins {
+    id 'java-library'
+    id 'io.spring.dependency-management' version '1.1.7'
+    id 'maven-publish'
+}
+
+group = 'com.deoksan'
+version = '0.1.0'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+    withSourcesJar()
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencyManagement {
+    imports {
+        mavenBom 'org.springframework.boot:spring-boot-dependencies:4.1.0'
+    }
+}
+
+dependencies {
+    // Spring Boot starters — api: 소비자가 어노테이션/타입을 직접 사용하므로 전이 노출
+    api 'org.springframework.boot:spring-boot-starter-data-jpa'
+    api 'org.springframework.boot:spring-boot-starter-data-redis'
+    api 'org.springframework.boot:spring-boot-starter-security'
+    api 'org.springframework.boot:spring-boot-starter-web'
+    api 'org.springframework.boot:spring-boot-starter-validation'
+    api 'org.springframework.boot:spring-boot-starter-cache'
+    api 'org.springframework.boot:spring-boot-starter-actuator'
+    api 'org.aspectj:aspectjweaver'
+    api 'org.springframework.retry:spring-retry:2.0.11'
+    api 'com.fasterxml.jackson.core:jackson-databind'
+    api 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.0'
+
+    // Cloudflare R2 / S3 — LogArchiveScheduler
+    api 'software.amazon.awssdk:s3:2.29.52'
+
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+            groupId = 'com.deoksan'
+            artifactId = 'deoksan-common'
+            version = project.version
+        }
+    }
+}
