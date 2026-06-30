@@ -19,7 +19,9 @@ public enum ErrorDomain {
     CLT("OAuthClient", "err.dom.clt", "CLT"),
     KEY("ApiKey", "err.dom.key", "KEY"),
     SY("System", "err.dom.sy", "SY"),
-    VL("Validation", "err.dom.vl", "VL");
+    VL("Validation", "err.dom.vl", "VL"),
+    STG("Storage", "err.dom.stg", "STG"),
+    CMT("BlogComment", "err.dom.cmt", "CMT");
 
     private final String label;
     private final String i18nKey;
