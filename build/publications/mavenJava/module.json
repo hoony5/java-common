@@ -1,0 +1,206 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.deoksan",
+    "module": "deoksan-common",
+    "version": "0.1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.5.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-data-jpa"
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-data-redis"
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-security"
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-security-oauth2-client"
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-web"
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-validation"
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-cache"
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-actuator"
+        },
+        {
+          "group": "org.aspectj",
+          "module": "aspectjweaver"
+        },
+        {
+          "group": "org.springframework.retry",
+          "module": "spring-retry",
+          "version": {
+            "requires": "2.0.11"
+          }
+        },
+        {
+          "group": "com.fasterxml.jackson.core",
+          "module": "jackson-databind"
+        },
+        {
+          "group": "org.springdoc",
+          "module": "springdoc-openapi-starter-webmvc-ui",
+          "version": {
+            "requires": "2.8.0"
+          }
+        },
+        {
+          "group": "software.amazon.awssdk",
+          "module": "s3",
+          "version": {
+            "requires": "2.29.52"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "deoksan-common-0.1.0.jar",
+          "url": "deoksan-common-0.1.0.jar",
+          "size": 95768,
+          "sha512": "5645a14003126d48265b7ea2d80d6e4f14e562817e580954dd9be6cff7ef2bce5bf3614b2420620b1ef99a729f5367e1155c319317f1aa0f4e84c3571530303e",
+          "sha256": "4579f10686db802e51cab935eff3328b126f15026f989441cf933814af2c55c6",
+          "sha1": "30cf308fdb3168144167a4682cdc7f00fcb20066",
+          "md5": "fcca2379dcc4ae4492be9a31d99774ca"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-data-jpa"
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-data-redis"
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-security"
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-security-oauth2-client"
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-web"
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-validation"
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-cache"
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-actuator"
+        },
+        {
+          "group": "org.aspectj",
+          "module": "aspectjweaver"
+        },
+        {
+          "group": "org.springframework.retry",
+          "module": "spring-retry",
+          "version": {
+            "requires": "2.0.11"
+          }
+        },
+        {
+          "group": "com.fasterxml.jackson.core",
+          "module": "jackson-databind"
+        },
+        {
+          "group": "org.springdoc",
+          "module": "springdoc-openapi-starter-webmvc-ui",
+          "version": {
+            "requires": "2.8.0"
+          }
+        },
+        {
+          "group": "software.amazon.awssdk",
+          "module": "s3",
+          "version": {
+            "requires": "2.29.52"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "deoksan-common-0.1.0.jar",
+          "url": "deoksan-common-0.1.0.jar",
+          "size": 95768,
+          "sha512": "5645a14003126d48265b7ea2d80d6e4f14e562817e580954dd9be6cff7ef2bce5bf3614b2420620b1ef99a729f5367e1155c319317f1aa0f4e84c3571530303e",
+          "sha256": "4579f10686db802e51cab935eff3328b126f15026f989441cf933814af2c55c6",
+          "sha1": "30cf308fdb3168144167a4682cdc7f00fcb20066",
+          "md5": "fcca2379dcc4ae4492be9a31d99774ca"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "deoksan-common-0.1.0-sources.jar",
+          "url": "deoksan-common-0.1.0-sources.jar",
+          "size": 72736,
+          "sha512": "0ff5e69db854d489a57534d5111157f4bf6933a355b8ccb339343fc7debca8ed85da742fa889d18320707dec26304f8cbb2924831f1a9b23c8d5225b6436e6cb",
+          "sha256": "c10337b705a127a8360d3477bbdbddc28dbcf62c32e3e4d9ed7bf538578fec25",
+          "sha1": "7f6a33520babc3e152700fb21c0c20b25fd05d4a",
+          "md5": "77ea67dfd4fe9e86707feb4699fad461"
+        }
+      ]
+    }
+  ]
+}

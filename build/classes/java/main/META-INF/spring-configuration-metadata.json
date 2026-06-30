@@ -1,0 +1,21 @@
+{
+  "groups": [
+    {
+      "name": "app",
+      "type": "com.deoksan.share.config.AppProperties",
+      "sourceType": "com.deoksan.share.config.AppProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "app.cors-allowed-origins",
+      "type": "java.util.List<java.lang.String>",
+      "description": "CORS 허용 오리진 목록. application.properties에서 쉼표로 구분.",
+      "sourceType": "com.deoksan.share.config.AppProperties"
+    }
+  ],
+  "hints": [],
+  "ignored": {
+    "properties": []
+  }
+}

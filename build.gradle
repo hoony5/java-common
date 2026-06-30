@@ -55,8 +55,8 @@ publishing {
     publications {
         mavenJava(MavenPublication) {
             from components.java
-            groupId = 'com.deoksan'
-            artifactId = 'deoksan-common'
+            groupId = 'com.github.hoony5'
+            artifactId = 'java-common'
             version = project.version
         }
     }
